@@ -60,14 +60,17 @@ const Layout = () => {
       <Profile>
         {/*todo (1) 프로필 꾸미기*/}
         <div>
-          <ProfilePicture src="" alt="프로필 사진" />
+          <ProfilePicture src="https://img.freepik.com/premium-vector/cute-baby-rabbit-playing-alone_190436-115.jpg" alt="프로필 사진" />
         </div>
         <div>
-          <Name>이름</Name>
-          <Description>설명</Description>
+          <Name>최예은</Name>
+          <Description>2024 실전코딩</Description>
         </div>
       </Profile>
-      <Nav>{/*todo (2) 메뉴 작성*/}</Nav>
+      <Nav>
+        <NavLink to="/">포스트</NavLink>
+        <NavLink to="/resume">소개</NavLink>
+      </Nav>
       <Outlet />
     </div>
   );
